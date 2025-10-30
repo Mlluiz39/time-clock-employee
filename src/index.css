@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Admin Panel Colors - Dark Elegant */
+    --admin-bg-from: 222 47% 11%;
+    --admin-bg-to: 215 28% 17%;
+    
+    /* Registration Panel Colors - Vibrant Gradient */
+    --registro-bg-from: 254 72% 64%;
+    --registro-bg-to: 277 64% 61%;
+    
+    /* Employee Card Colors - Rainbow Gradients */
+    --card-blue-from: 217 91% 60%;
+    --card-blue-to: 221 83% 53%;
+    
+    --card-green-from: 142 76% 36%;
+    --card-green-to: 160 84% 39%;
+    
+    --card-purple-from: 271 91% 65%;
+    --card-purple-to: 292 84% 61%;
+    
+    --card-pink-from: 340 82% 52%;
+    --card-pink-to: 350 89% 60%;
+    
+    --card-yellow-from: 45 93% 47%;
+    --card-yellow-to: 25 95% 53%;
+
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 254 72% 64%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 28% 17%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 215 28% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 254 72% 64%;
+
+    --radius: 0.75rem;
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+    --card: 215 28% 17%;
+    --card-foreground: 210 40% 98%;
+    --popover: 215 28% 17%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 254 72% 64%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 217 33% 18%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 18%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 33% 18%;
+    --input: 217 33% 18%;
+    --ring: 254 72% 64%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
